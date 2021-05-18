@@ -35,6 +35,11 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 #include <string.h>
 
 #include "SDL2_rotozoom.h"
+/*
+ * XXX: Emscripten: add missing include so that SDL_SetError is declared
+ * correctly
+ */
+#include "SDL_error.h"
 
 /* ---- Internally used structures */
 
